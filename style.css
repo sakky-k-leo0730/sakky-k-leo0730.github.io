@@ -74,12 +74,16 @@ section div a {
   font-size: 18px;
   border: rgba(255,255,255,0.2) solid 1px;
 
-  transition: 0.25s;
+  transition: all 0.1s ease-in-out;
 }
 
 section div a:hover {
   background: rgba(255,255,255,0.3);
-  transform: translateY(-3px);
+}
+
+section div a:active {
+  background: rgba(255,255,255,0.3);
+  transform: scale(0.99);
 }
 
 section img {
