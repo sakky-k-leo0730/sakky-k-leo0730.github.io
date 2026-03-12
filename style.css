@@ -1,0 +1,113 @@
+* {
+  font-family: sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+main {
+  flex: 1;
+  background-color: var(--secondary-color);
+}
+
+/* Colors */
+:root {
+  --primary-color: #A90000;
+  --secondary-color: #FF5252;
+}
+
+/* Profile */
+header {
+  padding-block: 2.5rem;
+  background-color: var(--primary-color);
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 1px solid var(--secondary-color);
+}
+
+header h1 {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+
+/* Links */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-block: 2rem;
+  padding-inline: 4rem;
+}
+
+section div a {
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  max-width: 25rem;
+  gap: 20px;
+
+  padding-block: 16px;
+  padding-inline: 24px;
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border: rgba(255,255,255,0.2) solid 1px;
+
+  transition: 0.25s;
+}
+
+section div a:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-3px);
+}
+
+section img {
+  width: 30px;
+  height: 30px;
+
+}
+
+section h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  padding-block: 0.5rem;
+  font-size: 13px;
+  color: pink;
+  opacity: 0.8;
+  background-color: var(--primary-color);
+}
+
+footer a {
+  color: pink;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
